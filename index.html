@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--Tailwind CSS CDN Link-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+
+
+    <!--Singup Offer-->
+
+    <div id="offer" class="bg-black text-white text-xs md:text-xl text-center py-2 md:py-4">
+        <p><a href="sign-up.html" class="text-blue-200">Sign Up</a> and <b>GET 20% OFF</b> for your first Order
+            <i id="offer-close" style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i>
+        </p>
+    </div>
+
+
+    <!--Responsive-Navebar-->
+    <nav class="px-4 py-4 flex items-center justify-between sticky top-0 z-10 shadow-sm bg-white">
+        <h1 class="text-3xl md:text-4xl font-bold">Nostra</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+            class="size-4 md:hidden w-5 hover:shadow-xl transform hover:-translate-y-0.5">
+            <path fill-rule="evenodd"
+                d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+                clip-rule="evenodd" />
+        </svg>
+
+
+
+        <ul class="hidden md:flex gap-5 text-gray-600 md:px-5">
+            <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+            <li><a class="hover:underline hover:text-black" href="#new-arrival">New Arrival</a></li>
+            <li><a class="hover:underline hover:text-black" href="#most-wanted">Most Wanted</a></li>
+            <li><a class="hover:underline hover:text-black" href="collection.html">Collections</a></li>
+            <li><a class="hover:underline hover:text-black" href="contact.html">Contact US</a></li>
+        </ul>
+    </nav>
+
+    <!--Side navbar-->
+
+    <section id="sidenav"
+        class=" text-gray-50 fixed px-4 z-50 top-0 left-0 flex md:hidden transition-all duration-1000"
+        style="width: 50%; height: 100vh; left: -50%; background-color: #1D232C;">
+        <div class="text-left p-5">
+            <p class="inline cursor-pointer font-extrabold text-gray-50" id="closenav">X</p>
+        </div>
+
+        <ul class="flex flex-col mt-10 gap-10 text-gray-50 items-center">
+            <li><a class="hover:underline" href="index.html">Home</a></li>
+            <li><a class="hover:underline" href="#new-arrival">New Arrival</a></li>
+            <li><a class="hover:underline" href="#most-wanted">Most Wanted</a></li>
+            <li><a class="hover:underline" href="collection.html">Collections</a></li>
+            <li><a class="hover:underline" href="contact.html">Contact US</a></li>
+        </ul>
+    </section>
+
+
+    <!--Style background image-->
+
+
+    <section>
+        <div class="relative px-4">
+            <ul id="slider">
+                <li class="h-[50vh] relative ">
+                    <img src="./image/fashion1 (1).png" alt="background image" class="rounded-xl animate-pulse c">
+                    <div class="absolute top-0 justify-center h-full w-full flex rounded-xl px-20"
+                        style="background-color: rgba(0, 0, 0, 0.8);">
+                        <div class="my-auto text-center">
+                            <h1 class="sm:text-2xl md:text-7xl font-bold text-white">
+                                Level up your style with our
+                            </h1>
+                            <h4 class="font-bold text-sm md:text-xl text-white py-3">Summer Collections</h4>
+                            <button class="bg-white px-2 py-1 rounded-md md:text-xl">
+                                Sign Now <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </li>
+                <li class="h-[50vh] relative  hidden">
+                    <img src="./image/fashion1 (2).png" alt="background image" class="rounded-xl animate-pulse c">
+                    <div class="absolute top-0 justify-center h-full w-full flex rounded-xl px-20"
+                        style="background-color: rgba(0, 0, 0, 0.8);">
+                        <div class="my-auto text-center">
+                            <h1 class="sm:text-2xl md:text-7xl font-bold text-white">
+                                Level up your style with our
+                            </h1>
+                            <h4 class="font-bold text-sm md:text-xl text-white py-3">Summer Collections</h4>
+                            <button class="bg-white px-2 py-1 rounded-md md:text-xl">
+                                Sign Now <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </li>
+                <li class="h-[50vh] relative  hidden">
+                    <img src="./image/fashion1 (3).png" alt="background image" class="rounded-xl">
+                    <div class="absolute top-0 justify-center h-full w-full flex rounded-xl px-4"
+                        style="background-color: rgba(0, 0, 0, 0.8);">
+                        <div class="my-auto text-center">
+                            <h1 class="sm:text-2xl md:text-7xl font-bold text-white">
+                                Level up your style with our
+                            </h1>
+                            <h4 class="font-bold text-sm md:text-xl text-white py-3">Summer Collections</h4>
+                            <button class="bg-white px-2 py-1 rounded-md md:text-xl">
+                                Sign Now <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </li>
+                <li class="h-[50vh] relative  hidden">
+                    <img src="./image/fashion1 (4).png" alt="background image" class="rounded-xl">
+                    <div class="absolute top-0 justify-center h-full w-full flex rounded-xl px-4"
+                        style="background-color: rgba(0, 0, 0, 0.8);">
+                        <div class="my-auto text-center">
+                            <h1 class="sm:text-2xl md:text-7xl font-bold text-white">
+                                Level up your style with our
+                            </h1>
+                            <h4 class="font-bold text-sm md:text-xl text-white py-3">Summer Collections</h4>
+                            <button class="bg-white px-2 py-1 rounded-md md:text-xl">
+                                Sign Now <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="absolute px-8 flex h-full w-full top-0 left-0">
+
+                <div class="my-auto w-full flex justify-between">
+                    <button onclick="prev()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 w-16 md:w-48 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+
+                    </button>
+                    <button onclick="next()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 w-16 md:w-48 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Brands-->
+
+    <section class="px-4 my-5">
+        <h2 class="font-extrabold text-2xl mt-5">Brands</h2>
+        <div class="py-5">
+            <div id="brands" class="flex justify-between items-center">
+                <div class="brands-item cursor-pointer text-center">
+                    <img class="brands-icon w-7 md:w-14" src="./image/behance (1).png" alt="logo">
+                    <p class="text-sm md:text-xl">Puma</p>
+                </div>
+
+                <div class="brands-item cursor-pointer text-center">
+                    <img class="brands-icon w-7 md:w-14" src="./image/adidas.png" alt="logo">
+                    <p class="text-sm md:text-xl">Adidas</p>
+                </div>
+
+                <div class="brands-item cursor-pointer text-center">
+                    <img class="brands-icon w-7 md:w-14" src="./image/simple.png" alt="logo">
+                    <p class="text-sm md:text-xl">Simple</p>
+                </div>
+
+                <div class="brands-item cursor-pointer text-center">
+                    <img class="brands-icon w-7 md:w-14" src="./image/leaves.png" alt="logo">
+                    <p class="text-sm md:text-xl">Leaves</p>
+                </div>
+
+                <div class="brands-item cursor-pointer text-center">
+                    <img class="brands-icon w-7 md:w-14" src="./image/behance.png" alt="logo">
+                    <p class="text-sm md:text-xl">Behance</p>
+                </div>
+
+                <div class="brands-item cursor-pointer text-center">
+                    <img class="brands-icon w-7 md:w-14" src="./image/twitch.png" alt="logo">
+                    <p class="text-sm md:text-xl">Twitch</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--servives-container-->
+
+    <section class="px-4">
+        <div id="service">
+
+            <div id="servives-container-1" class="flex justify-between">
+                <div class="mr-3">
+                    <h2 class="text-lg md:text-4xl font-extrabold">We Provide Best</h2>
+                    <h2 class="text-lg md:text-4xl font-extrabold">Customer Experiences</h2>
+                </div>
+
+                <div>
+                    <p class="text-lg md:text-4xl">|| We ensure that our customer have the best shopping experience</p>
+                </div>
+            </div>
+
+            <div id="servives-container-2" class="flex justify-between py-5">
+                <div class="bg-gray-100 text-xs md:text-lg rounded-lg mr-3 p-2">
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-circle-check"></i>
+                    <h4 class="font-extrabold">Original Products</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+                    </p>
+                </div>
+
+                <div class="bg-gray-100 text-xs md:text-lg rounded-lg mr-3 p-2">
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-face-smile"></i>
+                    <h4 class="font-extrabold">Satisfaction Guarantee</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+                    </p>
+                </div>
+
+                <div class="bg-gray-100 text-xs md:text-lg rounded-lg mr-3 p-2">
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-broom"></i>
+                    <h4 class="font-extrabold">New Arrival Everyday</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+                    </p>
+                </div>
+
+                <div class="bg-gray-100 text-xs md:text-lg rounded-lg p-2">
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast"></i>
+                    <h4 class="font-extrabold">Fast &amp; Free Shipping</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--New Arrivals-->
+
+    <section class="px-4 mb-5">
+
+        <div id="initial-scroll-animate" class="transition-all duration-1000">
+            <h2 id="new-arrival" style=" margin-top: 5vw;" class="font-extrabold text-2xl mb-5">New Arrivals</h2>
+
+            <div>
+                <ul class="flex justify-between gap-5">
+                    <li class="relative">
+                        <img src="./image/f1.jpg" alt="background image" class="rounded-2xl w-96 h-full">
+                        <div class="absolute top-0 justify-center h-full w-full flex rounded-xl px-4"
+                            style="background-color: rgba(0, 0, 0, 0.8);">
+                            <div class="my-auto text-center sm:text-xs md:text-xl">
+                                <button
+                                    class="bg-white text-xs md:text-2xl md:px-3 md:py-1 border border-black rounded-xl hover:bg-gray-200 cursor-pointer">Shop
+                                    Now <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="relative">
+                        <img src="./image/f2.jpg" alt="background image" class="rounded-2xl w-96 h-full">
+                        <div class="absolute top-0 justify-center h-full w-full flex rounded-xl px-4"
+                            style="background-color: rgba(0, 0, 0, 0.8);">
+                            <div class="my-auto text-center sm:text-xs md:text-xl">
+                                <button
+                                    class="bg-white text-xs md:text-2xl md:px-3 md:py-1 border border-black rounded-xl hover:bg-gray-200 cursor-pointer">Shop
+                                    Now <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="relative">
+                        <img src="./image/f3.jpg" alt="background image" class="rounded-2xl w-96 h-full">
+                        <div class="absolute top-0 justify-center h-full w-full flex rounded-xl px-4"
+                            style="background-color: rgba(0, 0, 0, 0.8);">
+                            <div class="my-auto text-center sm:text-xs md:text-xl">
+                                <button
+                                    class="bg-white text-xs md:text-2xl md:px-3 md:py-1 border border-black rounded-xl hover:bg-gray-200 cursor-pointer">Shop
+                                    Now <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="relative">
+                        <img src="./image/f4.jpg" alt="background image" class="rounded-2xl w-96 h-full">
+                        <div class="absolute top-0 justify-center h-full w-full flex rounded-xl px-4"
+                            style="background-color: rgba(0, 0, 0, 0.8);">
+                            <div class="my-auto text-center sm:text-xs md:text-xl">
+                                <button
+                                    class="bg-white text-xs md:text-2xl md:px-3 md:py-1 border border-black rounded-xl hover:bg-gray-200 cursor-pointer">Shop
+                                    Now <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                        </div>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Most wanted-->
+    <div class="px-4 mb-5 transition-all duration-1000">
+        <h2 style=" margin-top: 5vw;" class="text-2xl font-extrabold mb-5">Most Wanted</h2>
+
+        <div id="most-wanted" class="relative grid grid-cols-5 gap-5">
+
+            <div class="most-wanted-container relative">
+                <img style="width: 20vw;" src="./image/m1.jpg" alt="">
+                <p class="absolute top-0 px-2 bg-red-500 m-1  text-xs md:text-lg rounded-md md:rounded-lg text-white">
+                    sale</p>
+
+                <img src="./image/blackheart.png" alt="like-icon"
+                    class="like-button absolute bottom-2 right-2 cursor-pointer transition-all duration-300 w-4 md:w-8">
+
+            </div>
+
+            <div class="most-wanted-container relative">
+                <img style="width: 20vw;" src="./image/m2.jpg" alt="">
+                <p class="absolute top-0 px-2 bg-red-500 m-1  text-xs md:text-lg rounded-md md:rounded-lg text-white">
+                    sale</p>
+                <img src="./image/blackheart.png" alt="like-icon"
+                    class="like-button absolute bottom-2 right-2 cursor-pointer transition-all duration-300 w-4 md:w-8">
+            </div>
+
+            <div class="most-wanted-container relative">
+                <img style="width: 20vw;" src="./image/m3.jpg" alt="">
+                <p class="absolute top-0 px-2 bg-red-500 m-1  text-xs md:text-lg rounded-md md:rounded-lg text-white">
+                    sale</p>
+                <img src="./image/blackheart.png" alt="like-icon"
+                    class="like-button absolute bottom-2 right-2 cursor-pointer transition-all duration-300 w-4 md:w-8">
+
+
+            </div>
+
+            <div class="most-wanted-container relative">
+                <img style="width: 20vw;" src="./image/m4.jpg" alt="">
+                <p class="absolute top-0 px-2 bg-red-500 m-1  text-xs md:text-lg rounded-md md:rounded-lg text-white">
+                    sale</p>
+                <img src="./image/blackheart.png" alt="like-icon"
+                    class="like-button absolute bottom-2 right-2 cursor-pointer transition-all duration-300 w-4 md:w-8">
+
+
+            </div>
+
+            <div class="most-wanted-container relative">
+                <img style="width: 20vw;" src="./image/m5.jpg" alt="">
+                <p class="absolute top-0 px-2 bg-red-500 m-1  text-xs md:text-lg rounded-md md:rounded-lg text-white">
+                    sale</p>
+                <img src="./image/blackheart.png" alt="like-icon"
+                    class="like-button absolute bottom-2 right-2 cursor-pointer transition-all duration-300 w-4 md:w-8">
+
+            </div>
+        </div>
+    </div>
+
+    <!--Limited offer-->
+
+    <section class="px-4 my-10">
+        <div class="limited-offer flex bg-gray-700 py-6 px-20 gap-5 md:gap-10">
+            <div class="limited-offer-img">
+                <img src="./image/offer.jpg" alt="offer image" class="h-36 md:h-full w-96 md:w-full">
+            </div>
+            <div class="limited-offer-text my-auto gap-2">
+                <h2 class="font-extrabold mb-1 md:pb-4 text-white text-sm md:text-5xl">Limited Offer</h2>
+                <h4 class="text-xs md:text-3xl mb-2 md:pb-4 text-white font-bold">35% OFF on this for the first 30
+                    Customers
+                </h4>
+                <button
+                    class="text-black bg-white rounded-full md:rounded-md text-xs md:text-xl p-1 md:p-2 border-black hover:bg-gray-300">Shop
+                    Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <!--News-Letter-->
+
+    <div id="news" class="px-4 py-4 text-center">
+        <h1 class="text-xl font-bold md:text-3xl ">Join our News Letter</h1>
+        <p class="text-xs md:text-xl">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <div class="my-3">
+            <div class="grid grid-rows-1 mx-20 my-3">
+                <input type="text" class="border border-black p-2 rounded container">
+            </div>
+
+            <button class="mt-3 p-2 bg-black text-sm md:text-xl text-white rounded-md hover:opacity-40"><a
+                    href="#">Subscribe <i class="fa-solid fa-arrow-right"></i> </a></button>
+
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <div id="footer" style="background-color: #1D232C;" class=" text-white px-5 py-2 md:py-8">
+        <div id="footer-container">
+            <div id="footer-box-1" class="p-4">
+                <h2 class="font-bold text-2xl md:text-5xl mb-3">Nostra</h2>
+                <p class="text-sm md:text-3xl my-3">The Standard chunk of Lorem ipsum
+                    used since the 1500s is reprodused
+                    below for those interest</p>
+                <div class="footer-icon-container mb-3">
+                    <a href="#"><i
+                            class="icon fa-brands fa-instagram w-20 text-2xl md:text-4xl hover:opacity-30"></i></a>
+                    <a href="#"><i class="icon fa-brands fa-twitter w-20 text-2xl md:text-4xl hover:opacity-30"></i></a>
+                    <a href="#"><i
+                            class="icon fa-brands fa-facebook w-20 text-2xl md:text-4xl hover:opacity-30"></i></a>
+                </div>
+                <p id="subtitle" class="text-lg md:text-3xl hover:opacity-30"><a href="#">@ 2024 Nostra.com</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!--JavaScript link-->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
